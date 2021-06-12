@@ -1,3 +1,123 @@
-.task-add-dashes {
-  background-color: red;
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #191970;
+  background-color: #b0c4de;;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 2rem 0;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background-color: #f0f8ff;
+  border: 2px solid #191970;
+  border-radius: 1rem;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.conditions {
+  margin-bottom: 1.5rem;
+  font-size: 0.75rem;
+}
+
+p {
+  margin: 0;
+}
+
+p:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+dl {
+  margin: 0;
+}
+
+dd {
+  margin: 0;
+}
+
+dd:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+pre {
+  margin: 0;
+}
+
+code {
+  display: block;
+  padding: 1rem;
+  color: #228b22;
+  background-color: #1b1b1b;
+  border: 2px solid #228b22;
+  border-radius: 0.5rem;
+}
+
+code:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+input {
+  padding: 0.5rem;
+  font: inherit;
+  color: inherit;
+  background-color: #f0f8ff;
+  border: 2px solid #191970;
+  border-radius: 0.25rem;
+}
+
+.result {
+  min-height: calc(1.25rem * 1.5);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+ul:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font: inherit;
+  color: inherit;
+  background-color: #f0f8ff;
+  border: 2px solid #191970;
+  border-radius: 0.25rem;
 }
