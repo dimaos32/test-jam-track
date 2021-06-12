@@ -78,4 +78,31 @@ const autocomplite = (request, dictionary = DEFAULT_DICTIONARY) => {
   return res;
 };
 
-console.log(autocomplite('lira', DEFAULT_DICTIONARY));
+// Оформление интерактива на html страницы
+
+// Задача 1
+
+const addDashesInput = document.querySelector('#task1-input');
+const addDashesOutput = document.querySelector('#task1-output');
+
+addDashesInput.addEventListener('input', () => {
+  addDashesInput.value = addDashesInput.value.replace (/[^\d]/g, '');
+  addDashesOutput.textContent = addDashes(addDashesInput.value);
+});
+
+// Задача 2
+
+const autocompliteDictionary = document.querySelector('#task2-dictionary');
+const autocompliteRequest = document.querySelector('#task2-request');
+const autocompliteOutput = document.querySelector('#task2-output');
+
+let userDictionary = autocompliteDictionary.textContent.split(' ');
+
+autocompliteDictionary.addEventListener('input', () => {
+  userDictionary = autocompliteDictionary.value.split(' ');
+  autocompliteOutput.textContent = autocomplite(autocompliteRequest.value, userDictionary);
+});
+
+autocompliteRequest.addEventListener('input', () => {
+  autocompliteOutput.textContent = autocomplite(autocompliteRequest.value, userDictionary);
+});
